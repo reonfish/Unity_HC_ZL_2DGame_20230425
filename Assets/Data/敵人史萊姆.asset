@@ -15,5 +15,5 @@ MonoBehaviour:
   hp: 500
   attack: 50
   moveSpeed: 2
-  expProbability: 0.8
-  prefabExp: {fileID: 0}
+  expProbability: 1
+  prefabExp: {fileID: 303642205463880057, guid: c9ae8c4d68eb2ed48b2dd63b0272ba80, type: 3}
