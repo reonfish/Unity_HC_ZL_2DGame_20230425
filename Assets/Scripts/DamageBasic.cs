@@ -4,6 +4,8 @@ public class DamageBasic : MonoBehaviour
 {
     [Header("資料")]
     public DataBasic data;
+    [Header("傷害值預製物")]
+    public GameObject prefabDamage;
 
     private float hp;
 
@@ -15,6 +17,8 @@ public class DamageBasic : MonoBehaviour
     public void Damage(float damage)
     {
         hp -= damage;
+
+        Instantiate(prefabDamage, transform.position, transform.rotation);
 
         print($"<color=#ffee66>{gameObject.name} 血量剩下：{hp}</color>");
 
