@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 776528592913777614}
   - component: {fileID: 776528592913777587}
   - component: {fileID: 8306508535345902705}
+  - component: {fileID: 1171616148}
+  - component: {fileID: 1171616154}
   m_Layer: 0
   m_Name: "\u6575\u4EBA\u53F2\u840A\u59C6"
   m_TagString: Untagged
@@ -144,3 +146,30 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.46
+--- !u!114 &1171616148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776528592913777615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb96facbca8b03042a3b1b7e59b4d3af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: b24f0b65126b0274992a2d67f9783846, type: 2}
+--- !u!114 &1171616154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776528592913777615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c362eac4ff1061c44bd7daacd06d2ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: b24f0b65126b0274992a2d67f9783846, type: 2}
+  prefabDamage: {fileID: 8660974976249517180, guid: 9303e6a3baab7fd4e941aacab15f51d3, type: 3}
