@@ -9,9 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f43b1208c95d5640902b2be0415639e, type: 3}
-  m_Name: "\u73A9\u5BB6\u8CC7\u6599"
+  m_Script: {fileID: 11500000, guid: 5ce150742da21b64e8054c08f4652873, type: 3}
+  m_Name: "\u6280\u80FD_\u5564\u9152\u50B7\u5BB3"
   m_EditorClassIdentifier: 
-  hp: 100
-  attack: 50
-  moveSpeed: 5
+  skillName: 
+  skillPicture: {fileID: 0}
+  skillDescription: "\u589E\u52A0\u6B66\u5668\u50B7\u5BB3"
+  skullLv: 1
+  skillValues:
+  - 50
+  - 75
+  - 100
+  - 150
+  - 200
