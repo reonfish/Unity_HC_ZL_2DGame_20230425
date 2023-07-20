@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce150742da21b64e8054c08f4652873, type: 3}
   m_Name: "\u6280\u80FD_\u7D93\u9A57\u5438\u53D6\u7BC4\u570D"
   m_EditorClassIdentifier: 
-  skillName: 
-  skillPicture: {fileID: 0}
+  skillName: "\u7D93\u9A57\u5438\u53D6"
+  skillPicture: {fileID: 21300000, guid: 1c74d1dcff866ee48a68842355840c90, type: 3}
   skillDescription: "\u63D0\u9AD8\u7D93\u9A57\u7372\u53D6\u7BC4\u570D"
-  skullLv: 1
+  skillLv: 1
   skillValues:
   - 1.5
   - 2.5

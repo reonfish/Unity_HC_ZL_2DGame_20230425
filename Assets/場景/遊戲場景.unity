@@ -319,7 +319,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 3
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
@@ -1253,7 +1253,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 3
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
@@ -2114,7 +2114,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.5}
   serializedVersion: 2
-  m_Radius: 2.5
+  m_Radius: 1.5
 --- !u!114 &699250235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,9 +2131,17 @@ MonoBehaviour:
   textLv: {fileID: 134100566}
   textExp: {fileID: 1204994405}
   goLvUp: {fileID: 469107789}
-  goSkillUI1: {fileID: 1823601131}
-  goSkillUI2: {fileID: 1989982741}
-  goSkillUI3: {fileID: 1439672718}
+  goSkillUI:
+  - {fileID: 1823601131}
+  - {fileID: 1989982741}
+  - {fileID: 1439672718}
+  dataSkills:
+  - {fileID: 11400000, guid: f62f494f1ddcd754e9a657a4a0770c93, type: 2}
+  - {fileID: 11400000, guid: 34765982549b9014fa4decab90c333b4, type: 2}
+  - {fileID: 11400000, guid: ce1c7e92f8c12ec49b1751a9ff6a7b8c, type: 2}
+  - {fileID: 11400000, guid: f743b49319e77654a9da6c5e8ad03f53, type: 2}
+  - {fileID: 11400000, guid: 7a28983df34aef4408b44dc1c1969868, type: 2}
+  randomSkill: []
   expNeeds:
   - 100
   - 202
@@ -2235,6 +2243,10 @@ MonoBehaviour:
   - 19306
   - 19602
   - 19900
+  playerExpRamge: {fileID: 699250234}
+  WeaponSystem: {fileID: 1297896309}
+  DataBasic: {fileID: 11400000, guid: da50fd22b6cb4b8498a00b623cc4780f, type: 2}
+  controlSystem: {fileID: 699250231}
 --- !u!1 &714517134
 GameObject:
   m_ObjectHideFlags: 0
@@ -111159,7 +111171,7 @@ GameObject:
   - component: {fileID: 1297896308}
   - component: {fileID: 1297896309}
   m_Layer: 0
-  m_Name: "\u6B66\u5668\u751F\u6210\u9EDE"
+  m_Name: "\u6B66\u5668\u5564\u9152"
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -111192,6 +111204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 992dd1b468ecd8349818b53020123827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack: 50
   interval: 1
   prefabWeapon: {fileID: 2544126535766838002, guid: 71d8bf7edc0c98e4abb61a388571c19c, type: 3}
   power: {x: 100, y: 700}
@@ -111827,7 +111840,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1439672721}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699250235}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: ClickSkillButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1439672721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112218,7 +112243,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 3
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
@@ -112456,7 +112481,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1823601134}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699250235}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: ClickSkillButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1823601134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113214,7 +113251,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1989982744}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699250235}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: ClickSkillButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1989982744
 MonoBehaviour:
   m_ObjectHideFlags: 0
