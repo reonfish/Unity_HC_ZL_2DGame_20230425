@@ -12,7 +12,8 @@ public class DamageEnemy : DamageBasic
     {
         if (collision.gameObject.name.Contains("武器"))
         {
-            Damage(500);
+            float damge = collision.gameObject.GetComponent<Weapon>().attack; 
+            Damage(damge);
             
         }
 	}

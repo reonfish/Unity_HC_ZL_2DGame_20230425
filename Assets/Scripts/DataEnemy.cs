@@ -7,4 +7,9 @@ public class DataEnemy : DataBasic
     public float expProbability;
     [Header("掉落經驗值預製物")]
     public GameObject prefabExp;
+    [Header("攻擊範圍"), Range(0, 5)]
+    public float attackRange = 2;
+    [Header("攻擊間隔"), Range(0, 5)]
+    public float attackInterval = 2.5f;
+
 }
