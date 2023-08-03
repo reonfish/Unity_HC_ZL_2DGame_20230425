@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: "\u6575\u4EBA\u5E7D\u9748"
   m_EditorClassIdentifier: 
   hp: 300
-  attack: 100
-  moveSpeed: 3
+  attack: 20
+  moveSpeed: 3.5
   expProbability: 0.7
   prefabExp: {fileID: 0}
+  attackRange: 1
+  attackInterval: 1
