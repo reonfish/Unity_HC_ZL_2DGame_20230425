@@ -3,17 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Laser
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - "\u73A9\u5BB6"
   - Water
   - UI
-  - 
-  - 
-  - 
+  - "\u6B66\u5668"
+  - "\u6575\u4EBA"
+  - "\u7246\u58C1"
   - 
   - 
   - 

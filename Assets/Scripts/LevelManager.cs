@@ -40,11 +40,16 @@ public class LevelManager : MonoBehaviour
             collision.GetComponent<ExpSystem>().enabled = true;
         }
     }
-
+    private void Update() 
+    {
+#if UNITY_EDITOR
+        if(Input.GetKeyDown(KeyCode.Alpha1))AddExp(200);
+#endif
+    }
     public void AddExp(float exp) 
     {
         this.exp += exp;
-        if (this.exp > expNeeds[lv - 1])
+        if (this.exp >= expNeeds[lv - 1])
         {
             this.exp -= expNeeds[lv - 1];
             lv++;
@@ -55,6 +60,10 @@ public class LevelManager : MonoBehaviour
         imgExp.fillAmount = this.exp / expNeeds[lv-1];
     }
 
+    [Header("關閉")]
+    public GameObject btnClose;
+
+
     private void LevelUp()
     {
         goLvUp.SetActive(true);
@@ -63,17 +72,24 @@ public class LevelManager : MonoBehaviour
         randomSkill = dataSkills.Where(skill => skill.skillLv < 5).ToList();
         randomSkill = randomSkill.OrderBy(skill => Random.Range(0, 999)).ToList();
 
-        for (int i = 0; i < 3; i++) 
+        for (int i = 0; i < 3; i++)
         {
-            goSkillUI[i].transform.Find("技能名稱").GetComponent<TextMeshProUGUI>().text = randomSkill[i].skillName;
-            goSkillUI[i].transform.Find("技能圖示").GetComponent<Image>().sprite = randomSkill[i].skillPicture;
-            goSkillUI[i].transform.Find("文字描述").GetComponent<TextMeshProUGUI>().text = randomSkill[i].skillDescription;
-            goSkillUI[i].transform.Find("技能等級").GetComponent<TextMeshProUGUI>().text = "Lv"+randomSkill[i].skillLv;
-
+            if (i > randomSkill.Count - 1)
+            {
+                goSkillUI[i].SetActive(false);
+            }
+            else
+            {
+                goSkillUI[i].transform.Find("技能名稱").GetComponent<TextMeshProUGUI>().text = randomSkill[i].skillName;
+                goSkillUI[i].transform.Find("技能圖示").GetComponent<Image>().sprite = randomSkill[i].skillPicture;
+                goSkillUI[i].transform.Find("文字描述").GetComponent<TextMeshProUGUI>().text = randomSkill[i].skillDescription;
+                goSkillUI[i].transform.Find("技能等級").GetComponent<TextMeshProUGUI>().text = "Lv" + randomSkill[i].skillLv;
+            }
         }
+        if (randomSkill.Count == 0) btnClose.SetActive(true);
     }
 
-    [ContextMenu("產生經驗值需求資料")]
+	[ContextMenu("產生經驗值需求資料")]
     private void ExpNeeds() 
     {
         expNeeds = new float[100];
@@ -82,6 +98,11 @@ public class LevelManager : MonoBehaviour
             expNeeds[i] = (i + 1) * 100+i*(i+1);
         }
     
+    }
+    public void ClickCloseButton()
+    {
+        goLvUp.SetActive(false);
+        Time.timeScale = 1;
     }
     public void ClickSkillButton(int indexSkill) 
     {

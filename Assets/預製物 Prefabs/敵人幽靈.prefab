@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5501647553274219592}
   - component: {fileID: 6464788819725719398}
   - component: {fileID: 8776052191311835973}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: "\u6575\u4EBA\u5E7D\u9748"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,4 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 7476b21ac0b20f441a27b22be999dfd8, type: 2}
-  prefabDamage: {fileID: 8660974976249517180, guid: 83eecd976c4e2974db194ab1f6e39b18, type: 3}
+  prefabDamage: {fileID: 8660974976249517180, guid: 9303e6a3baab7fd4e941aacab15f51d3, type: 3}
