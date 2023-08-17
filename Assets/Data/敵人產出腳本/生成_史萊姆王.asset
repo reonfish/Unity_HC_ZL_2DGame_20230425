@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f43b1208c95d5640902b2be0415639e, type: 3}
-  m_Name: "\u73A9\u5BB6\u8CC7\u6599"
+  m_Script: {fileID: 11500000, guid: f5bf47ffa4355da499a719ec10da04cf, type: 3}
+  m_Name: "\u751F\u6210_\u53F2\u840A\u59C6\u738B"
   m_EditorClassIdentifier: 
-  hp: 200
-  attack: 50
-  moveSpeed: 5
+  timeToSpawn: 30
+  prefabEnemy: {fileID: 776528592913777615, guid: 1236ba9a9626c404893c045553dc058d, type: 3}
+  intervalSpawn: 1

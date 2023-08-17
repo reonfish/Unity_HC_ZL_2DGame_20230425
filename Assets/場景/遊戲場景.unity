@@ -353,8 +353,10 @@ MonoBehaviour:
   - {fileID: 1358208660}
   - {fileID: 924357054}
   - {fileID: 588491213}
-  dataSpawnEnmys:
+  dataSpawnEnemys:
   - {fileID: 11400000, guid: cb34064e10b2e2f4ab4a78a8307f8910, type: 2}
+  - {fileID: 11400000, guid: 35c2dd6e5e367474e8124ae81da31392, type: 2}
+  - {fileID: 11400000, guid: d3f4cb40e1942304b875a40004d75ffc, type: 2}
 --- !u!1 &90300406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2156,7 +2158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ea14156a1bdcf49b35a87d6d1d0f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 2
+  interval: 1
   prefabEnemy: {fileID: 776528592913777615, guid: 519816f35f6ad3444bf59ecda053b5d9, type: 3}
 --- !u!1001 &642559214
 PrefabInstance:
@@ -3082,6 +3084,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 0}
   prefabDamage: {fileID: 0}
+  onDead:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &753865450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111026,7 +111031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ea14156a1bdcf49b35a87d6d1d0f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 2
+  interval: 1
   prefabEnemy: {fileID: 776528592913777615, guid: 519816f35f6ad3444bf59ecda053b5d9, type: 3}
 --- !u!1001 &929501961
 PrefabInstance:
@@ -112881,7 +112886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ea14156a1bdcf49b35a87d6d1d0f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 2
+  interval: 1
   prefabEnemy: {fileID: 776528592913777615, guid: 519816f35f6ad3444bf59ecda053b5d9, type: 3}
 --- !u!1001 &1358508283
 PrefabInstance:
@@ -112974,7 +112979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ea14156a1bdcf49b35a87d6d1d0f78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interval: 2
+  interval: 1
   prefabEnemy: {fileID: 776528592913777615, guid: 519816f35f6ad3444bf59ecda053b5d9, type: 3}
 --- !u!4 &1362462435
 Transform:

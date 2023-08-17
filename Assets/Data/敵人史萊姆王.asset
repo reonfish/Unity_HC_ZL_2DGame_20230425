@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f43b1208c95d5640902b2be0415639e, type: 3}
-  m_Name: "\u73A9\u5BB6\u8CC7\u6599"
+  m_Script: {fileID: 11500000, guid: 84cfbb953975c2e47bdab4c786fbba96, type: 3}
+  m_Name: "\u6575\u4EBA\u53F2\u840A\u59C6\u738B"
   m_EditorClassIdentifier: 
-  hp: 200
+  hp: 1000
   attack: 50
-  moveSpeed: 5
+  moveSpeed: 1.5
+  expProbability: 1
+  prefabExp: {fileID: 303642205463880057, guid: c9ae8c4d68eb2ed48b2dd63b0272ba80, type: 3}
+  attackRange: 3.25
+  attackInterval: 1.5

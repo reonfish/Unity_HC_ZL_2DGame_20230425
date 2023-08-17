@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5bf47ffa4355da499a719ec10da04cf, type: 3}
-  m_Name: "\u5E7D\u9748\u7522\u51FA\u8173\u672C"
+  m_Name: "\u751F\u6210_\u5E7D\u9748"
   m_EditorClassIdentifier: 
   timeToSpawn: 10
   prefabEnemy: {fileID: 4798290985389126233, guid: 2ec362aae9715a74193addd4774fe3c8, type: 3}
